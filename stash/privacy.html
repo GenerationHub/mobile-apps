@@ -13,16 +13,38 @@
 </head>
 <body>
 <h1>Privacy Policy — Stash</h1>
-<p class="updated">Last updated: June 27, 2026</p>
+<p class="updated">Last updated: August 22, 2026</p>
 
 <p>Stash (“the app”, “we”, “us”) is a personal budgeting app. We designed it to be private by default.
 This policy explains what data the app handles.</p>
 
 <h2>Data stored on your device</h2>
-<p>All of your financial information — transactions, accounts, envelopes, and budgets — is stored
-<strong>locally on your device</strong>. We do not operate servers that collect or store this data, and we
-never ask you to link a bank account. Your financial data does not leave your device except through features
-you explicitly enable (such as your own iCloud backup, controlled by your Apple ID).</p>
+<p>Your saved financial information — including transactions, wallets, budgets, payday plan, and recurring
+items — is stored <strong>locally on your device</strong>. Stash does not connect to or read your bank account.
+If you import a bank statement, you choose the file yourself. Backups are created or restored only when you
+ask.</p>
+
+<h2>Optional AI-assisted features</h2>
+<p>Stash offers optional features powered by Claude from Anthropic. Before using each feature, Stash explains
+what will be sent and asks for your permission. These features include:</p>
+<ul>
+  <li><strong>Receipt capture:</strong> the receipt image you select is sent to identify the merchant, date,
+  currency, and total.</li>
+  <li><strong>Bank-file import:</strong> the CSV or Excel file you select is processed to identify its columns
+  and create a transaction preview.</li>
+  <li><strong>Weekly wording and Smart heads-ups:</strong> Stash sends a small set of totals or plan facts that
+  it has already calculated and verified on your device. Transaction descriptions, account credentials, and
+  receipt images are not included in these wording requests.</li>
+</ul>
+<p>Requests pass through our Supabase backend to Anthropic. Stash uses anonymous authentication to protect and
+rate-limit requests. Original receipt images and bank files are processed for the request and are not retained
+by our backend. We may retain limited user-scoped job status, structured review results, usage counts, and
+technical error information to operate and protect the service. Claude does not calculate your balances, save
+transactions, move money, or change your plan. AI suggestions are validated by Stash and, where applicable,
+must be confirmed by you.</p>
+<p>You can use Stash without these AI-assisted features. Smart heads-ups remain off unless you explicitly enable
+them. See <a href="https://www.anthropic.com/legal/privacy">Anthropic’s privacy policy</a> and
+<a href="https://supabase.com/privacy">Supabase’s privacy policy</a>.</p>
 
 <h2>Purchases</h2>
 <p>In-app purchases (Stash Pro) are processed by Apple and by our payments provider,
@@ -35,14 +57,24 @@ receive your name, email, or payment card details. See
 <h2>Information we do NOT collect</h2>
 <ul>
   <li>We do not collect your name, email address, or phone number.</li>
-  <li>We do not require an account to use the app.</li>
-  <li>We do not sell or share your data with advertisers.</li>
+  <li>We do not require you to create a named account to use the app.</li>
+  <li>We do not sell your financial data.</li>
   <li>We do not link to or read your bank accounts.</li>
+  <li>We never receive your bank password, PIN, or payment-card credentials.</li>
 </ul>
 
 <h2>Analytics &amp; diagnostics</h2>
-<p>Apple may provide us with aggregate, anonymized crash and usage statistics through App Store Connect if you
-have enabled sharing in your device settings. This data is not personally identifiable.</p>
+<p>Stash uses limited product analytics and diagnostics to understand whether features work and to improve the
+app. This may include app events, device and app information, crash details, and an automatically generated
+identifier. We do not intentionally include transaction descriptions, receipt contents, bank-file contents,
+or account credentials in analytics. Providers may include Apple, PostHog, RevenueCat, and Meta. Meta access
+to tracking-related identifiers is subject to Apple’s App Tracking Transparency permission.</p>
+
+<h2>Retention and deletion</h2>
+<p>You can remove locally stored financial data by deleting it in Stash or deleting the app. To request deletion
+of backend records associated with optional AI features, contact us at the address below. We retain operational
+records only for as long as reasonably necessary to provide, secure, and troubleshoot the service or meet legal
+requirements.</p>
 
 <h2>Children’s privacy</h2>
 <p>Stash is not directed at children under 13 and does not knowingly collect personal information from them.</p>
